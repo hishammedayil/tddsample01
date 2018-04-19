@@ -123,7 +123,8 @@ class ArgumentParserTest extends TestCase
             [['calculator.php', 'add', '5,6,7,8'], ['add', [5, 6, 7, 8]]],
             [['calculator.php', 'add', '2n5'], ['add', [2, 5]]],
             [['calculator.php', 'add', '2\n7'], ['add', [2, 7]]],
-            [['calculator.php', 'add', '2,5,1030'], ['add', [2, 5]]]
+            [['calculator.php', 'add', '2,5,1030'], ['add', [2, 5]]],
+            [['calculator.php', 'add', ''], ['add', []]]
         ];
     }
 }

@@ -54,7 +54,7 @@ class ArgumentParser
             }
         }
         $operandString = str_replace('\n', "\n", $operandString);
-        $operands = preg_split("/[\\nn," . $delimiter . "]+/", $operandString);
+        $operands = array_filter(preg_split("/[\\nn," . $delimiter . "]+/", $operandString));
         $numericOperands = array_filter($operands, 'is_numeric');
         if($numericOperands !== $operands) {
             throw new \InvalidArgumentException('Operands should be numeric!');
