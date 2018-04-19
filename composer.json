@@ -3,7 +3,8 @@
     "description": "a tdd test",
     "type": "project",
     "require-dev": {
-        "phpunit/phpunit": "^7.1"
+        "phpunit/phpunit": "^7.1",
+        "phpmetrics/phpmetrics": "^2.3"
     },
     "authors": [
         {
